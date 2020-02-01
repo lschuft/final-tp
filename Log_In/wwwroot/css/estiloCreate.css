@@ -1,0 +1,112 @@
+﻿.co{
+   
+    color: #fff !important;
+}
+
+.color {
+    color: #fff !important;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 200;
+    
+}
+
+.colorM {
+    color: #c0c8ff !important;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+    .colorM:hover {
+        color: #9bffb1 !important;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-weight: 300;
+    }
+
+
+
+
+.botoon {
+    margin-top: 10px;
+    text-decoration: none;
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 12px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+    .botoon:hover {
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background-color: white;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+ }
+
+input, select {
+    width: 90% !important;
+    display: block;
+    margin: 0 auto;
+}
+
+form input[type="email"]:required:valid {
+    border: 2px solid green;
+    /* otras propiedades */
+}
+/*caso contrario, el color sera rojo*/
+form input[type="email"]:focus:required:invalid {
+    border: 2px solid red;
+    /* otras propiedades */
+}
+
+
+
+/**Index****/
+
+
+
+.tabla {
+   
+    width: 85%;
+    max-width: 100%;
+    color:#fff;
+    }
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding-top: 83px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.field-validation-error {
+    color: red;
+    font-size: smaller;
+    padding-left: 12px;
+}
+
+.input-validation-error {
+    background: pink;
+    border: 1px solid red;
+}

@@ -1,0 +1,521 @@
+﻿@{
+    ViewData["Title"] = "Online Banking";
+}
+<!-- encabezado con banner gigante-->
+<!-- carrousel gigalnte -->
+<div class="banner-top">
+    <div class="slider">
+        <div class="callbacks_container">
+            <ul class="rslides callbacks callbacks1" id="slider4">
+                <li>
+                    <div class="w3layouts-banner-top jarallax">
+                        <div class="agileinfo-dot">
+                            <div class="container">
+                                <div class="agileits-banner-info">
+                                    <h3>Potenciá tus ahorros</h3>
+                                    <h6>Todo nuestro apoyo financiero</h6>
+                                    <p>Te ofrecemos tranquilidad y rentabilidad monetaria con grandes ventajas fiscales</p>
+                                    <div class="w3-button">
+                                        <a asp-area="Identity" asp-page="/Account/Register">Registrarme</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top1 jarallax">
+                        <div class="agileinfo-dot">
+                            <div class="container">
+                                <div class="agileits-banner-info">
+                                    <h3>Cobrá tu sueldo</h3>
+                                    <h6>Todo nuestro apoyo financiero</h6>
+                                    <p>Disfrutá de tu cuenta 100% bonificada, descuentos, experiencias y promociones</p>
+                                    <div class="w3-button">
+                                        <a asp-area="Identity" asp-page="/Account/Login">Ingresar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="w3layouts-banner-top w3layouts-banner-top2 jarallax">
+                        <div class="agileinfo-dot">
+                            <div class="container">
+                                <div class="agileits-banner-info">
+                                    <h3>Una atención diferente</h3>
+                                    <h6>Descubre nuestra propuesta exclusiva</h6>
+                                    <p>Le acercamos nuestro nuevo proyecto, donde lo escencial es usted</p>
+                                    <a asp-area="Identity" asp-page="/Account/Register">
+                                        <div class="w3-button">
+                                            Registrarme
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- fin carrousel gigalnte -->
+        <div class="clearfix"> </div>  <!-- espaciado entre primer carrousel y el " nuestro banco"-->
+    </div>
+</div>
+
+<!-- Nombre de banco -->
+<div class="banner">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="w3layouts-logo">
+                        <h1><a href="@Url.Action("Index", "Home")">Siembra  <span>Online</span></a></h1>
+                    </div>
+                </div>
+                <!--  Fin Nombre de banco -->
+                <!--nav Links-->
+                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                    <nav>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                            <li><a href="#about" class="scroll">Nosotros</a></li>
+                            <li><a href="#markets" class="scroll">Markets</a></li>
+                            <li><a href="#services" class="scroll">Servicios</a></li>
+                            <li><a href="#mail" class="scroll">Contacto</a></li>
+                            <div class="w31-button btn btn-primary-outline var">
+                                <a asp-area="Identity" asp-page="/Account/Login" class="lenk">
+                                    INICIAR SESIÓN
+                                </a>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!--fin encabezado con banner gigante -->
+<!-- about -->
+<div class="about" id="about">
+    <div class="container">
+        <div class="w3-about-grids">
+            <div class="col-md-6 w3-about-left">
+                <div id="main" role="main">
+                    <section class="slider">
+                        <div id="slider" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="~/images/5.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/6.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/7.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/8.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/9.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/10.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/5.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/6.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/7.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/8.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/9.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/10.jpg" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="carousel" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="~/images/5.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/6.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/7.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/8.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/9.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/10.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/5.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/6.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/7.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/8.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/9.jpg" alt="" />
+                                </li>
+                                <li>
+                                    <img src="~/images/10.jpg" alt="" />
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-6 w3-about-left">
+                <h2>Nuestro Banco</h2>
+                <h5>Somos el banco más grande de la Argentina</h5>
+                <p>
+                    Ofrecemos la mejor experiencia a nuestros clientes a través de soluciones a la medida, haciendo una banca con valores, con un equipo humano comprometido, tecnologías de vanguardia y la generación de valor compartido para nuestros grupos de interés.<span>
+                        En este sentido, cada miembro de nuestra organización enfocará todos sus esfuerzos a mantener y mejorar continuamente la calidad de nuestros productos, servicios y procesos desarrollados para satisfacer las necesidades, expectativas e intereses de todos los clientes uno por uno.
+                    </span>
+                </p>
+                <div class="w3l-button">
+                    <a asp-area="Identity" asp-page="/Account/Register">Registrarme</a>   <!--tiene que ir al registro de usuario-->
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //about -->
+<!-- cards -->
+<div class="markets" id="markets">
+    <div class="container">
+        <div class="wthree-heading">
+            <h3>Elegir Banco Siembra tiene muchos beneficios</h3>
+
+        </div>
+        <div class="markets-grids">
+            <div class="col-md-4 w3ls-markets-grid">
+                <div class="agileits-icon-grid">
+                    <div class="icon-left">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-right">
+                        <h5>Empresa Lider</h5>
+                        <p>Somos el primer banco líder a nivel Mundial: presente en más de 40 paises, con más de 130.000 profesionales y más de 180.000 oficinas.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="col-md-4 w3ls-markets-grid">
+                <div class="agileits-icon-grid">
+                    <div class="icon-left">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-right">
+                        <h5>Inversiones</h5>
+
+                        <p>Encontrá la solución ideal para cada una de tus necesidades de inversión. Plazos fijos, Cuentas Corrientes,Fondos Comunes de Inversión etc.</p>
+
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="col-md-4 w3ls-markets-grid">
+                <div class="agileits-icon-grid">
+                    <div class="icon-left">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-right">
+                        <h5>Proyecto Internacional</h5>
+                        <p>Tenemos la ventaja de trabajar en un entorno cada vez más internacional, idependientemente del país donde se encuentren.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+
+
+
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //cards -->
+<!-- servicios -->
+<div class="services" id="services">
+    <div class="container">
+        <div class="wthree-heading">
+            <h3>Nuestro servicio al alcance de tu mano</h3>
+            <h5>Disfruta de las ventajas de elegirnos</h5>
+        </div>
+        <div class="agile-services-grids">
+            <div class="col-md-4 agile-services-grid">
+                <img src="~/images/11.jpg" alt="" />
+                <h6>Inversiones</h6>
+                <p>Con la Banca Online ya no tenés restricciones de tiempo y lugar de gestiones.</p>
+                <ul>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Controla tus gastos e ingresos mes a mes</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Enviá dinero con el tipo de pago que más se ajusta a tus necesidades</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Consultá y gestioná tus recibos </li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Da de alta alertas sobre tus productos </li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Controla el movimiento de tu tarjetas</li>
+                </ul>
+            </div>
+            <div class="col-md-4 agile-services-grid">
+                <img src="~/images/12.jpg" alt="" />
+                <h6>Atención</h6>
+                <p>Aunque estés lejos, estamos contigo. A través de la Banca Online tendrás acceso a diferentes canales que te ofrecerán atención personalizada:.</p>
+                <ul>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Encuentra sucursaes o cajeros </li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Concierta una cita con tu oficina</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Contacta a tu gestor por mail o teléfono. Si todavía no tienes gestor envía un mensaje desde nuestra web </li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> En caso de que olvides tu clave solicita en el momento su renovación </li>
+
+                </ul>
+            </div>
+            <div class="col-md-4 agile-services-grid">
+                <img src="~/images/13.jpg" alt="" />
+                <h6>Banca Online</h6>
+                <p>Te brindamos un nuevo espacio donde podrás acceder a toda la información comercial, ventajas y condiciones de productos.</p>
+                <ul>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Cuentas</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Fondos de Inversión</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Cuentas de valores </li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Hipotecas y préstamos </li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Préstamo preconcedido de abono inmediato</li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!-- //servicios -->
+<!-- fake testimonios -->
+<div class="jarallax testimonial" id="testimonial">
+    <div class="testimonial-dot">
+        <div class="container">
+            <div class="wthree-heading testimonial-heading">
+                <h3>SNuestros Clientes Opinana</h3>
+                <h5>Personas reales, testimoios de vida</h5>
+            </div>
+            <div class="w3-agile-testimonial">
+                <div class="slider">
+                    <div class="callbacks_container">
+                        <ul class="rslides callbacks callbacks1" id="slider3">
+                            <li>
+                                <div class="testimonial-img-grid">
+                                    <div class="testimonial-img t-img1">
+                                        <img src="~/images/14.jpg" alt="" />
+                                    </div>
+                                    <div class="testimonial-img">
+                                        <img src="~/images/15.jpg" alt="" />
+                                    </div>
+                                    <div class="testimonial-img t-img2">
+                                        <img src="~/images/16.jpg" alt="" />
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="testimonial-img-info">
+                                    <p>Valoro la calidad de servicio recibido. Disiparon todas mis dudas y cuestiones sobre cláusulas abusivas de mis transacciones</p>
+                                    <h5>Peter Parker</h5>
+                                    <h6>Barrendero</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="testimonial-img-grid">
+                                    <div class="testimonial-img t-img1">
+                                        <img src="~/images/15.jpg" alt="" />
+                                    </div>
+                                    <div class="testimonial-img">
+                                        <img src="~/images/16.jpg" alt="" />
+                                    </div>
+                                    <div class="testimonial-img t-img2">
+                                        <img src="~/images/14.jpg" alt="" />
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="testimonial-img-info">
+                                    <p>Me aprobaron una hipoteca con clausula de sueldo sin haberme explicado qué era. Mi juez ha disctado sentencia y he recuperado todo lo pagado. Recomiendo este banco.</p>
+                                    <h5>Mary Jane</h5>
+                                    <h6>Periodista</h6>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="testimonial-img-grid">
+                                    <div class="testimonial-img t-img1">
+                                        <img src="~/images/16.jpg" alt="" />
+                                    </div>
+                                    <div class="testimonial-img">
+                                        <img src="~/images/14.jpg" alt="" />
+                                    </div>
+                                    <div class="testimonial-img t-img2">
+                                        <img src="~/images/15.jpg" alt="" />
+                                    </div>
+                                    <div class="clearfix"> </div>
+                                </div>
+                                <div class="testimonial-img-info">
+                                    <p>
+                                        Tras conocer los beneficios de contratarlos me parece una temeridad no confiar.
+                                        No volvería a elegir este banco.
+                                    </p>
+                                    <h5>Martha Sanchez</h5>
+                                    <h6>Cantante de Ducha</h6>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // fake testimonios -->
+<!-- contacto -->
+<div class="contact" id="mail">
+    <div class="container">
+        <div class="wthree-heading">
+            <h3>Contacto</h3>
+            <h5>Fácil, simple y rápido</h5>
+        </div>
+        <div class="agile-contact-form">
+            <div class="col-md-6 ">
+                <div class="w3agile-map">
+                    <h3>Estamos en contacto<br /><br /></h3>
+                    <p style="margin-top: 15px">Atención personalizada: Lunes a Viernes de 8:00 a 20:00 hs. Opciones de consulta automática (cuenta, préstamos, plazo fijo y tarjetas) disponibles 24 hs. Llamada gratuita comunicándote desde línea fija.</p>
+                </div>
+                <div class="agileits-contact-address">
+                    <ul>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> <span>+54 11 473 4191</span></li>
+                        <li><i class="fa fa-phone fa-envelope" aria-hidden="true"></i> <span><a href="mailto:jeesssik@gmail.com">clientes@siembra.com</a></span></li>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> <span>Av. del Libertador 6796, C1429 CABA.</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="w3agile-map">
+                    <h3>Encuentranos</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13144.24397463865!2d-58.45156590838623!3d-34.55201104041185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb42f9ed308c9%3A0xcd4d8e2268209306!2sORT%20Sede%20Belgrano!5e0!3m2!1ses-419!2sar!4v1573269710387!5m2!1ses-419!2sar" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- //contacto -->
+<!-- copyright -->
+<footer>
+    <div class="container">
+        <div class="copyright">
+            <p>© 2019 Siembra Online. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+<!-- //copyright -->
+
+
+@section Scripts
+    {
+    <script>
+
+        $(function () {
+
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        // velocidad y tamaños img carrousel gde
+
+        $('.jarallax').jarallax({
+            speed: 0.5,
+            imgWidth: 1366,
+            imgHeight: 768
+        })
+    </script>
+
+
+    <script type="text/javascript">
+        //mini carrousel
+        $(window).load(function () {
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: true,
+                slideshow: false,
+                itemWidth: 102,
+                itemMargin: 5,
+                asNavFor: '#slider'
+            });
+
+            $('#slider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: true,
+                slideshow: true,
+                sync: "#carousel",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        //slider fake testimonios
+        $(function () {
+
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+
+            });
+
+        });
+    </script>
+
+}

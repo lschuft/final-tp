@@ -1,0 +1,76 @@
+﻿@page
+@model LoginModel
+
+@{
+    //ViewData["Title"] = "Log in";
+}
+
+
+<!-- banner -->
+<div class="banner">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <div class="w3layouts-logo">
+                        <h1><a href="@Url.Action("Index","Home")">Siembra  <span>Online</span></a></h1>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- //banner -->
+
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('/images/bg-01.jpg');">
+        <div class="wrap-login100 p-t-30 p-b-50">
+            <span class="login100-form-title p-b-41">
+                ¡Bienvenido!
+            </span>
+
+
+
+            <h2>@ViewData["Title"]</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <section>
+                        <form method="post">
+                        
+                            <hr />
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="Input.Email" class="color"></label>
+                                <input asp-for="Input.Email" class="form-control" autocomplete="off"/>
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Input.Password" class="color"></label>
+                                <input asp-for="Input.Password" class="form-control" />
+                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-default botoon">Ingresar</button>
+                            </div>
+                            <div class="form-group">
+                                <p>
+                                    <a asp-page="./ForgotPassword">Forgot your password?</a>
+                                </p>
+                                <p>
+                                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                                </p>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="col-md-6 col-md-offset-2">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+            @section Scripts {
+                <partial name="_ValidationScriptsPartial" />
+            }
