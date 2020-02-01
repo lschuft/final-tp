@@ -6,16 +6,18 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <li>
-        <a asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+        <a asp-area="Identity" asp-page="/Account/Manage/Index" class="highlighted-button">
             Hola @UserManager.GetUserName(User)!
         </a>
     </li>
     <li>
-        <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm">
-            <button type="submit" class="highlighted-button">
-                SALIR
-            </button>
-        </form>
+        <a class="highlighted-button">
+            <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post" id="logoutForm">
+                <button type="submit">
+                    SALIR
+                </button>
+            </form>
+        </a>
     </li>
 }
 else
