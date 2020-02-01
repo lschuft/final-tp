@@ -1,6 +1,42 @@
 ﻿@{
     ViewData["Title"] = "Online Banking";
 }
+
+<!-- Nombre de banco -->
+<div class="banner">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="w3layouts-logo">
+                        <h1><a href="@Url.Action("Index", "Home")">Siembra  <span>Online</span></a></h1>
+                    </div>
+                </div>
+                <!--  Fin Nombre de banco -->
+                <!--nav Links-->
+                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                    <nav>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                            <li><a href="#about" class="scroll">Nosotros</a></li>
+                            <li><a href="#markets" class="scroll">Markets</a></li>
+                            <li><a href="#services" class="scroll">Servicios</a></li>
+                            <li><a href="#mail" class="scroll">Contacto</a></li>
+                            <partial name="_LoginPartial" />
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
 <!-- encabezado con banner gigante-->
 <!-- carrousel gigalnte -->
 <div class="banner-top">
@@ -61,46 +97,6 @@
         </div>
         <!-- fin carrousel gigalnte -->
         <div class="clearfix"> </div>  <!-- espaciado entre primer carrousel y el " nuestro banco"-->
-    </div>
-</div>
-
-<!-- Nombre de banco -->
-<div class="banner">
-    <div class="header">
-        <div class="container">
-            <nav class="navbar navbar-default">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="w3layouts-logo">
-                        <h1><a href="@Url.Action("Index", "Home")">Siembra  <span>Online</span></a></h1>
-                    </div>
-                </div>
-                <!--  Fin Nombre de banco -->
-                <!--nav Links-->
-                <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-                    <nav>
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="@Url.Action("Index", "Home")">Home</a></li>
-                            <li><a href="#about" class="scroll">Nosotros</a></li>
-                            <li><a href="#markets" class="scroll">Markets</a></li>
-                            <li><a href="#services" class="scroll">Servicios</a></li>
-                            <li><a href="#mail" class="scroll">Contacto</a></li>
-                            <div class="w31-button btn btn-primary-outline var">
-                                <a asp-area="Identity" asp-page="/Account/Login" class="lenk">
-                                    INICIAR SESIÓN
-                                </a>
-                            </div>
-                        </ul>
-                    </nav>
-                </div>
-            </nav>
-        </div>
     </div>
 </div>
 
