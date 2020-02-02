@@ -1,11 +1,12 @@
-﻿@model Log_In.Areas.Usuarios.Models.AccountViewModels.RegisterViewModel
+﻿@model Models.AccountViewModels.RegisterViewModel
 @{
     ViewData["Title"] = "Register";
 }
 
 <h1>@ViewData["Title"].</h1>
 
-<form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
+<form asp-area="Usuarios" asp-controller="Account" asp-action="Register" 
+      asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal" role="form">
     <h4>Create a new account.</h4>
     <hr />
     <div asp-validation-summary="All" class="text-danger"></div>

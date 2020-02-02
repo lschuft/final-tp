@@ -18,4 +18,16 @@
     <Folder Include="Areas\Usuarios\Data\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Areas\Usuarios\Views\_ValidationScriptsPartial.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Usuarios\Views\_ViewImports.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Areas\Usuarios\Views\_ViewStart.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
 </Project>
