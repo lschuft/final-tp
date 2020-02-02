@@ -12,6 +12,9 @@ using Microsoft.EntityFrameworkCore;
 using Log_In.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Log_In.Areas.Usuarios.Models;
+using Log_In.Areas.Admin.Models;
 
 namespace Log_In
 {
@@ -37,10 +40,27 @@ namespace Log_In
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddIdentityCore<ApplicationAdmin>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            //Autenticacion por cookie separada por area
+            services.AddAuthentication(o =>
+                {
+                    o.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                })
+                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
+                {
+                    o.LoginPath = new PathString("/Usuarios/Account/Login/");
+                })
+                .AddCookie("admin", o =>
+                {
+                    o.LoginPath = new PathString("/Admin/Account/Login/");
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
